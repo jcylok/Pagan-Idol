@@ -6,12 +6,13 @@ const userSchema = new Schema({
     lastName: String,
     email: String,
     frequency: Number,
-    topics: {
-        happyHour: Boolean,
-        cocktail: Boolean,
-        tikitender: Boolean,
-        event: Boolean,
-    }
+    happyHour: Boolean,
+    cocktail: Boolean,
+    tikitender: Boolean,
+    event: Boolean,
+    daily: Boolean,
+    weekly: Boolean,
+    monthly: Boolean,
 });
 
 const User = mongoose.model('User', userSchema);
