@@ -87,7 +87,7 @@ app.delete('/api/v1/users/:userId', (req, res) => {
           status: 200,
           count: 1,
           data: deletedUser,
-          dataRequested: new Date().toLocaleString()
+          dateRequested: new Date().toLocaleString()
       })
   });
 });
