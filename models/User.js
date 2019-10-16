@@ -13,7 +13,7 @@ const userSchema = new Schema({
     daily: Boolean,
     weekly: Boolean,
     monthly: Boolean,
-    dateCreated: { type: Date },
+    dateCreated: { type: Date, default: Date.now },
 });
 
 const User = mongoose.model('User', userSchema);
