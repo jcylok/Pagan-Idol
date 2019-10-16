@@ -6,66 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- jQuery -->
     <script defer
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
     <script defer src="/scripts/main.js"></script>
     <title>Pagan Idol</title>
 </head>
 <body>
-    <h1>Welcome, to the Pagan Idol!</h1>
+<header>
+        <div class="title">
+                <img id="headImg" src="/images/PaganIdolLogo.png" alt="Pagan Idol">
+            </div>
+</header>
+​
+    <!-- Hero -->
+    <section class="hero">
+       
+    </section>
+​
+    <section class="header">
+        <h2>Craft Yourself the Perfect Newsletter</h2>
+        <p>Select your favorite topic below so that we can send you a personalized newsletter!</p>
+    </section>
+​
     <!-- first name, last name, email -->
-    <main class="container">
-    <form id="newForm">
-       <div class="textfield"> 
-            <div class="col-md-4">
-                <label for="first-name"></label>
-                <input type="text" class="form-control form-control-sm" id="first-name" name="first-name" placeholder="First Name"/>
+    <section id="topics" class="container3">
+             <div id="happy">
+                 <!-- <span>Happy Hour</span> -->
+                <button  type="button"><img id="happyImg" src="/images/HappyHour-1.png" alt="Happy Hour"></button>
             </div>
-            <div class="col-md-4">
-                <label for="last-name"></label>
-                <input type="text" class="form-control form-control-sm" id="last-name" name="last-name" placeholder="Last Name"/>
+            <div id="cocktail">
+                <!-- <span>Featured Cocktail</span> -->
+                <button type="button"><img id="cocktailImg" src="/images/Cocktail-1.jpg" alt="Featured Cocktails"></button>
             </div>
-            <div class="col-md-4">
-                <label for="email"></label>
-                <input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="Enter Email">
+            <div class="topic">
+                <!-- <span>Featured Tikitender</span> -->
+                <button type="button"><img id="tikitenderImg" src="/images/Tikitender-1.jpg" alt="Featured Cocktails"></button>
             </div>
-       </div>
+            <div class="topic">
+                <!-- <span>Events</span> -->
+                <button type="button"><img id="eventsImg" src="/images/Events-1.jpg" alt="Featured Cocktails"></button>
+            </div>
+    </section>
 ​
+    <section class="header">
+            <h2>How often do you want to hear from us?</h2>
+        </section>
+        <section>
+            <form class="container4">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customCheck5" name="radios">
+                    <label for="customCheck5">Daily</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customCheck6" name="radios">
+                    <label for="customCheck6">Weekly</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customCheck7" name="radios">
+                    <label for="customCheck7">Monthly</label>
+                </div>
+            </form>
+        </section>
 ​
-​
+        <section class="header">
+            <h2>Where should we send your newsletter?</h2>
+        </section>
+<form id="newForm">
+ <section class="container2">
+        <div class="col-md-4">
+            <label for="first-name"></label>
+            <input type="text" class="form-control form-control-sm" id="first-name" name="first-name" placeholder="First Name"/>
+        </div>
+        <div class="col-md-4">
+            <label for="last-name"></label>
+            <input type="text" class="form-control form-control-sm" id="last-name" name="last-name" placeholder="Last Name"/>
+        </div>
+    </section>
+    <section class="container">
+        <div class="col-md-4">
+            <label for="email"></label>
+            <input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="Enter Email">
+        </div>
         
-        <div class="custom-control custom-radio">
-            <input type="radio" class="custom-control-input" id="customCheck1">
-            <label class="custom-control-label" for="customCheck1">Happy Hour Deals!</label>
-        </div>
-        <div class="custom-control custom-radio">
-            <input type="radio" class="custom-control-input" id="customCheck2">
-            <label class="custom-control-label" for="customCheck2">Featured Cocktails!</label>
-        </div>
-        <div class="custom-control custom-radio">
-            <input type="radio" class="custom-control-input" id="customCheck3">
-            <label class="custom-control-label" for="customCheck3">Featured Tikitender!</label>
-        </div>
-        <div class="custom-control custom-radio">
-            <input type="radio" class="custom-control-input" id="customCheck4">
-            <label class="custom-control-label" for="customCheck4">Events!</label>
-        </div>
-        <div class="custom-control custom-radio">
-            <input type="radio" class="custom-control-input" id="customCheck5">
-            <label class="custom-control-label" for="customCheck5">Daily</label>
-        </div>
-        <div class="custom-control custom-radio">
-            <input type="radio" class="custom-control-input" id="customCheck6">
-            <label class="custom-control-label" for="customCheck6">Weekly</label>
-        </div>
-        <div class="custom-control custom-radio">
-            <input type="radio" class="custom-control-input" id="customCheck7">
-            <label class="custom-control-label" for="customCheck7">Monthly</label>
-        </div>
-        <button>Sign me up!</button>
+        <button class="butn">Sign me up!</button>
+    </section>
     </form>
-</main>
+​
 </body>
 </html>
