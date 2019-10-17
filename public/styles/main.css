@@ -1,0 +1,203 @@
+/* * {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.hero {
+    background: url('../images/pagan-idol.jpeg') center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55vh;
+    margin-top: -25px;
+    
+}
+#headImg {
+    height: 75px;
+    width: 262px;
+}
+.title {
+    color: #53c4a7;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+header {
+    background: #e26c40;
+    /* width: 100%; */
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+h2 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+    color: #e26c40;
+    margin-top: 80px;
+}
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #828282;
+    /* margin-bottom: 30px; */
+}
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.form-control-sm {
+    width: 300px;
+    margin: 10px;
+}
+#email {
+    /* width: 650px; */
+    /* margin-right: 30%; */
+}
+.form-control {
+    border: 1px solid #e26c40;
+}
+.container3  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.container4  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 30px;
+    
+}
+.container5 {
+    display: flex;
+    flex-wrap: wrap;
+}
+#happyImg {
+    width: 250px;
+    height: 350px;
+    /* left: 408.14px; */
+    /* border-radius: 30px; */
+}
+#cocktailImg {
+    width: 250px;
+    height: 350px;
+    /* left: 408.14px;
+    border-radius: 30px; */
+}
+#tikitenderImg {
+    width: 250px;
+    height: 350px;
+    /* left: 408.14px;
+    border-radius: 30px; */
+}
+#eventsImg {
+    width: 250px;
+    height: 350px;
+    /* left: 408.14px; */
+    /* border-radius: 30px; */
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #e26c40;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white; 
+}
+
+
+.header {
+    margin: 0, 20px, 0, 20px;
+}
+button {
+    box-shadow: none!important;
+
+    border: none;
+}
+.butn {
+    background: #53c4a7;
+    background-image: -webkit-linear-gradient(top, #53c4a7, #53c4a7);
+    background-image: -moz-linear-gradient(top, #53c4a7, #53c4a7);
+    background-image: -ms-linear-gradient(top, #53c4a7, #53c4a7);
+    background-image: -o-linear-gradient(top, #53c4a7, #53c4a7);
+    background-image: linear-gradient(to bottom, #53c4a7, #53c4a7);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    width: 250px;
+}
+.butn:hover {
+    background: #e26c40;
+    background-image: -webkit-linear-gradient(top, #e26c40, #e26c40);
+    background-image: -moz-linear-gradient(top, #e26c40, #e26c40);
+    background-image: -ms-linear-gradient(top, #e26c40, #e26c40);
+    background-image: -o-linear-gradient(top, #e26c40, #e26c40);
+    background-image: linear-gradient(to bottom, #e26c40, #e26c40);
+    text-decoration: none;
+    width: 250px;
+}
+label {
+    font-size: 20px;
+    color: #53c4a7;
+}
